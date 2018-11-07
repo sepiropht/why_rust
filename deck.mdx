@@ -6,13 +6,13 @@ export { default as theme } from './theme'
   <title>Presentation Title</title>
 </Head>
 
-# Hello
-
+# Rust
+Le language sans compromis *
 ---
 
-## Edit this file
+## Pourquoi un nouveau language ?
 
-To create your presentation
+Pourquoi devrais je m'en préocupper ?
 
 ```notes
 - Create speaker notes in fenced code blocks
@@ -20,4 +20,108 @@ To create your presentation
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+## Les differents types de languages
+
+
+| unsafe ugly and fast      |     safe beautiful and slow    |
+| ------------- |: -------------: |
+| c      |        JavasScript        |
+|  c++       |        python        |
+|       |             Java etc...   |
+
+---
+
+| unsafe ugly and fast      |     safe beautiful and slow    |
+| ------------- |: -------------: |
+|  free malloc    |        garbage collector        |
+
+---
+## Il y a t-il une troisième voie ?
+
+
+
+
+---
+
+
+
+## Comment rust réussi cet exploit ?
+
+
+
+---
+Dans la plupart des languages
+``` 
+  main()
+  function main() {
+    let foo = [1, 2]
+    let bar = foo
+    console.log(bar) // [1, 2]
+    console.log(foo) // [1, 2]
+  }
+  ```
+
+
+
+
+---
+
+
+
+  En rust ...
+  ``` 
+  fn main () {
+    let foo = [1, 2]
+    let bar = foo
+    println!("{}", bar) // [1, 2]
+    println!("{}", foo) // Erreur de compilation !!! La variable dans foo a été move 
+  }
+  ```
+---
+## Les fondamenteaux de rust
+
+Ownership et borrowing
+
+---
+
+## Une syntaxe claire et une éxecution rapide
+
+---
+
+Quelques examples 
+
+```
+fn main() {
+  let ages = vec![23, 24, 25, 34, 33];
+  let moyenne_age = ages
+                     .iter()
+                     .fold(0, |total, age| total + age) / 5;
+}
+```
+
+
+
+
+
+---
+
+
+
+
+
+Ou encore ...
+``` 
+fn main() {
+  let ages = vec![23, 24, 25, 34, 33];
+  let moyenne_age = ages.iter().sum() / 5;
+}
+```
+---
+
+
+
+## La programation bas niveau enfin accessible et fun
+
+
+---
+
