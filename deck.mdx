@@ -1,4 +1,7 @@
 import { Head } from 'mdx-deck'
+import { CodeSurfer } from "mdx-deck-code-surfer"
+
+
 
 export { default as theme } from './theme'
 
@@ -38,8 +41,12 @@ Et pourquoi devrais-je m'en préocupper ?
 ---
 ## Il y a t-il une troisième voie ?
 
+---
 
 
+| fast  safe and beautiful     |
+| --------------------------: |
+            rust       
 
 ---
 
@@ -50,37 +57,28 @@ Et pourquoi devrais-je m'en préocupper ?
 
 
 ---
-Dans la plupart des languages
-``` 
-  main()
-  function main() {
-    let foo = [1, 2]
-    let bar = foo
-    console.log(bar) // [1, 2]
-    console.log(foo) // [1, 2]
-  }
-  ```
 
-
+<CodeSurfer
+  title= "Dans la plupart des languages"
+  code={require("!raw-loader!./index.js")}
+  lang="javascript"
+  showNumbers={true}
+  dark={false}
+/>
 
 
 ---
-
-
-
-  En rust ...
-  ``` 
-  fn main () {
-    let foo = [1, 2]
-    let bar = foo
-    println!("{}", bar) // [1, 2]
-    println!("{}", foo) // Erreur de compilation !!! La variable dans foo a été move 
-  }
-  ```
+<CodeSurfer
+  title= "En rust..."
+  code={require("!raw-loader!./index.rs")}
+  lang="rust"
+  showNumbers={true}
+  dark={false}
+/>
 ---
 ## Les fondamenteaux de rust
 
-Ownership et borrowing
+Ownership et Borrowing
 
 ---
 
@@ -88,16 +86,13 @@ Ownership et borrowing
 
 ---
 
-Quelques examples 
-
-```
-fn main() {
-  let ages = vec![23, 24, 25, 34, 33];
-  let moyenne_age = ages
-                     .iter()
-                     .fold(0, |total, age| total + age) / 5;
-}
-```
+<CodeSurfer
+  title= "Quelques exemples"
+  code={require("!raw-loader!./my.rs")}
+  lang="rust"
+  showNumbers={true}
+  dark={false}
+/>
 
 
 
@@ -109,13 +104,13 @@ fn main() {
 
 
 
-Ou encore ...
-``` 
-fn main() {
-  let ages = vec![23, 24, 25, 34, 33];
-  let moyenne_age = ages.iter().sum() / 5;
-}
-```
+<CodeSurfer
+  title= "Ou encore ...."
+  code={require("!raw-loader!./my2.rs")}
+  lang="rust"
+  showNumbers={true}
+  dark={false}
+/>
 ---
 
 
@@ -132,3 +127,46 @@ fn main() {
 
 
 ![alt text](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2018/03/01_rust_loves_js.png "Logo Title Text 1")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+ Merci !
+
+
+
+
+
+
+
+
+
+
+
+
+
