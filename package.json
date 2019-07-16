@@ -13,11 +13,11 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^1.6.7"
+    "mdx-deck": "^2.5.0"
   },
   "name": "my-presentation",
   "dependencies": {
     "mdx-deck-code-surfer": "^0.5.3",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^3.0.0"
   }
 }
