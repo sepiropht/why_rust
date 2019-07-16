@@ -1,6 +1,8 @@
 
 # mdx-deck basic template
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sepiropht/why_rust.svg)](https://greenkeeper.io/)
+
 This was generated with [mdx-deck][]'s `npm init deck` command.
 
 ## Development
